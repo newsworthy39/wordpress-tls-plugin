@@ -2,7 +2,6 @@
 A wordpress TLS authentication mechanism Proof Of Concept.
 
 # Apache2 installation
-
 in /etc/apache2/sites-enabled/something-ssl.conf:
 
 SSLVerifyClient require
