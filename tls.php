@@ -98,7 +98,7 @@ function tls_install_db() {
 	$sql = "CREATE TABLE IF NOT EXISTS $table_name (
                 id mediumint(9) NOT NULL AUTO_INCREMENT,
                 SSL_CLIENT_M_SERIAL varchar(32) NOT NULL,
-                wp_userid varchar(255) not null,
+                wp_userid mediumt(9) not null,
                 PRIMARY KEY (id)
         ) $charset_collate; ";
 
