@@ -9,6 +9,14 @@ SSLCertificateFile    /home/cloud/server/$(hostname)-crt
 SSLCertificateKeyFile /home/cloud/server/$(hostname)-key
 SSLCACertificateFile /home/cloud/ca/ca.crt
 
+Additional requirements, is
+
+#SSLOptions +FakeBasicAuth +ExportCertData +StrictRequire
+<FilesMatch "\.(cgi|shtml|phtml|php)$">
+	SSLOptions +StdEnvVars +ExportCertData
+</FilesMatch>
+
+
 # Browser
 Have the CA above, issue a personal x509 to you and install it into your browser.
 
