@@ -18,8 +18,7 @@
 
 # Nginx
 
- server {
-
+    server {
     ssl on;
     ..
     ..
@@ -42,9 +41,9 @@
         # Fix ssl client certificate
         fastcgi_param  SSL_CLIENT_VERIFY $ssl_client_verify;
         fastcgi_param  SSL_CLIENT_S_DN $ssl_client_s_dn;
+        fastcgi_param  SSL_CLIENT_CERT $ssl_client_cert;
     }
- } 
-
+    } 
 
 
 # Browser
