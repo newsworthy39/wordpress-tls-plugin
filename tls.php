@@ -53,7 +53,7 @@ function ssl_client_cert_auth($obj, $ignore=true) {
 	# tokenize this shit. We dont do passwords anymore.
 	# its done. Pass. No. Adios.
 	$subject_string = $_SERVER['SSL_CLIENT_S_DN'];
-	$tokens = explode(',', $subject_string);
+	$tokens = explode('/', $subject_string);
 	foreach($tokens as $token) {
 	  $values = explode('=', $token);
 	  if (!empty($values[1])) {
