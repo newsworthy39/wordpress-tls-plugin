@@ -1,4 +1,4 @@
-# wordpress-tls-plugin
+# wordpress-tls-plugin for wordpress
  A wordpress TLS authentication mechanism Proof Of Concept.
 
 # Apache2 installation
